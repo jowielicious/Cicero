@@ -27,12 +27,12 @@ Shared files:
 - `js/site.js` – language switching, menus, the quote carousel, the pricing calculator, the accordion, tabs, the request form and the hero film.
 - `js/ui.js` – the full-screen menu and swipe for the testimonials.
 - `images/` – the black-and-white photography.
-- `film/` – the hero film (`cicero-strait-final.mp4`, 1600px H.264) and its poster frame.
+- `film/` – the hero film (`cicero-film-v5.mp4`, 1600px H.264) and its poster frame.
 
 Links between pages carry context: "Talk to us about claims" opens `demo.html?topic=claims` with the form preselected, and the pricing calculator's button passes the chosen plan into the request message.
 
 ## Notes for development
 
 - Headline font: `General Sans` if available, otherwise `Hanken Grotesk` from Google Fonts. Self-host General Sans to match the design file exactly.
-- The hero film is fetched into memory and played from a blob URL, because the original host could not serve byte-range requests (which iPhones need). On a normal web server you can point the `<video>` straight at `film/cicero-strait-final.mp4` instead.
+- The hero film is fetched into memory and played from a blob URL, because the original host could not serve byte-range requests (which iPhones need). On a normal web server you can point the `<video>` straight at `film/cicero-film-v5.mp4` instead.
 - The demo request form and briefing signup are front-end only; they build the request text but do not send it anywhere yet.
