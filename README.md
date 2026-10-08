@@ -36,3 +36,11 @@ Links between pages carry context: "Talk to us about claims" opens `demo.html?to
 - Headline font: `General Sans` if available, otherwise `Hanken Grotesk` from Google Fonts. Self-host General Sans to match the design file exactly.
 - The hero film is fetched into memory and played from a blob URL, because the original host could not serve byte-range requests (which iPhones need). On a normal web server you can point the `<video>` straight at `film/cicero-film-v5.mp4` instead.
 - The demo request form and briefing signup are front-end only; they build the request text but do not send it anywhere yet.
+
+## Email: order confirmation
+
+`email/order-confirmation.html` is the order confirmation sent after someone buys a plan, built on the Cicero email template (600px, table layout, inline styles, mobile stacking below 620px).
+
+- It is filled with an example order (law firms, 25 users at $300, Team translation plan, one extra pool, 2-year term) so it can be reviewed. Swap the example values for merge fields: first name, firm, order number, dates, plan lines, amounts, renewal date and links.
+- Host the files in `email/images/` and change each `src` to its absolute `https://` URL before sending; email clients cannot load relative paths.
+- The logos are PNGs because many email clients (Gmail, Outlook) do not show SVG.
