@@ -41,6 +41,6 @@ Links between pages carry context: "Talk to us about claims" opens `demo.html?to
 
 `email/order-confirmation.html` is the order confirmation sent after someone buys a plan, built on the Cicero email template (600px, table layout, inline styles, mobile stacking below 620px).
 
-- It is filled with an example order (law firms, 25 users at $300, Team translation plan, one extra pool, 2-year term) so it can be reviewed. Swap the example values for merge fields: first name, firm, order number, dates, plan lines, amounts, renewal date and links.
+- It is filled with an example order (a law firm with 25 seats on a 2-year term) so it can be reviewed. Swap the example values for merge fields: first name, firm, order number, date, plan, users, term and links.
 - Host the files in `email/images/` and change each `src` to its absolute `https://` URL before sending; email clients cannot load relative paths.
 - The logos are PNGs because many email clients (Gmail, Outlook) do not show SVG.
